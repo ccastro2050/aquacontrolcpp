@@ -443,6 +443,10 @@ public:
         cout << "Nivel minimo del tanque: " << nivelMinimo << " %" << endl;
         cout << "Costo con gestor: $" << costoCon << endl;
         cout << "Costo sin gestor: $" << costoSin << endl;
+        // NUEVO: costo promedio por hora con gestor = el costo dividido las horas simuladas
+        // Ejemplo: $34005 / 24 h = $1417 por hora
+        // Solo si horasSimuladas > 0, para no dividir por 0
+        if (horasSimuladas > 0) cout << "Costo promedio por hora: $" << costoCon / horasSimuladas << endl;
         // El ahorro: lo que se paga sin gestor menos lo que se paga con gestor
         cout << "Ahorro:           $" << costoSin - costoCon;
         // El ahorro en porcentaje, con 1 decimal. Solo si costoSin > 0, para no dividir por 0
