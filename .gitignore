@@ -1,0 +1,10 @@
+# .gitignore: archivos que Git NO sube a GitHub
+# Una regla por linea; las lineas con # son comentarios
+
+# *.exe: cualquier archivo que termine en .exe (el programa compilado)
+# Cada integrante lo crea al compilar; no se sube
+*.exe
+
+# .vscode/: la carpeta de configuracion de VS Code de cada computador
+# Tiene rutas propias de cada maquina; no se sube
+.vscode/
